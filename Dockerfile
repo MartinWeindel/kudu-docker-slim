@@ -2,7 +2,7 @@ FROM centos:7
 
 LABEL maintainer="martin.weindel@gmail.com"
 
-ARG KUDU_RPM=https://github.com/MartinWeindel/kudu-rpm/releases/download/v1.6.0-2/kudu-1.6.0-2.x86_64.rpm
+ARG KUDU_RPM=https://github.com/MartinWeindel/kudu-rpm/releases/download/1.5.0-1/kudu-1.5.0-1.x86_64.rpm
 
 RUN yum install -y ${KUDU_RPM}
 
