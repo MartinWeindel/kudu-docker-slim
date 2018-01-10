@@ -1,0 +1,10 @@
+#!/bin/bash
+set -xeuo pipefail
+
+if [ "${KUDU_MASTER}" = "localhost" ]; then
+  /usr/lib/kudu/sbin/kudu-master -fs_wal_dir /var/lib/kudu/master ${KUDU_MASTER_OPTS} &
+fi
+
+sleep 5s
+/usr/lib/kudu/sbin/kudu-tserver -fs_wal_dir /var/lib/kudu/tserver \
+        -tserver_master_addrs ${KUDU_MASTER} ${KUDU_TSERVER_OPTS}
