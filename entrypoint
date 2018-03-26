@@ -1,6 +1,8 @@
 #!/bin/bash
 set -xeuo pipefail
 
+ulimit -u 10000
+
 if [ "${KUDU_MASTER}" = "localhost" ]; then
   /usr/lib/kudu/sbin/kudu-master -fs_wal_dir /var/lib/kudu/master ${KUDU_MASTER_OPTS} &
 fi

@@ -7,5 +7,5 @@ Image can be found on [DockerHub](https://hub.docker.com/r/usuresearch/kudu-dock
 ## Getting Started
 
 ```
-docker run -d --rm --name apache-kudu --net=host kudu-docker-slim
+docker run -d --rm --name apache-kudu --net=host usuresearch/kudu-docker-slim
 ```
