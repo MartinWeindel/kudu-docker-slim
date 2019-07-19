@@ -4,6 +4,11 @@ and RPM from [kudu-rpm](https://github.com/MartinWeindel/kudu-rpm)
 
 Image can be found on [DockerHub](https://hub.docker.com/r/mweindel/kudu-docker-slim/)
 
+## Alternatives
+
+There is also an image with Kudu based on [Ubuntu Xenial](https://hub.docker.com/r/apache/kudu/tags), maintained by Apache.
+
+
 ## Getting Started
 
 ```
